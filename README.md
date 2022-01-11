@@ -3,11 +3,10 @@ postcss rem2px rem2rem
 
 ## Options
 ```
-  transformType: 'rem',   // rem transform dest type : 'px' | 'rem' (default: 'rem')
-  sdw: 1920,        // src css design width (default: 1920)
-  ddw: 1920,       // dest css design width (default: 1920)
-  srfs: 100,  // src root fontsize value (default: 100)
-  drfs: 100, // dest root fontsize value (default: 100)
+  transformType: 'rem',  // rem transform dest type : 'px' | 'rem' (default: 'rem')
+  sdw: 1920,             // src css design width (default: 1920)
+  ddw: 1920,             // dest css design width (default: 1920)
+  srfs: 100,             // src root fontsize value (default: 100)
   forbidComment: 'no',   // no transform value comment (default: `no`)
   precision: 4,          // transformed px or rem precision
   remLimit: 0            // no transform rem limit（default: 0）
@@ -16,9 +15,9 @@ postcss rem2px rem2rem
 
 ## Computed
 ```
-rem2px: regexpRemValue * srfs * (ddw / sdw)
+rem2px: regexpRemValue * srfs 
 
-rem2rem: regexpRemValue * srfs * (sdw / ddw) / drfs
+rem2rem: regexpRemValue * (sdw / ddw)
 ```
 
 ## Usage
