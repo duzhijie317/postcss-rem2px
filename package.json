@@ -1,0 +1,28 @@
+{
+  "name": "postcss-rem2px",
+  "version": "1.1.0",
+  "description": "postcss rem2px rem2rem",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duzhijie317/postcss-rem2px.git"
+  },
+  "keywords": [
+    "webpack",
+    "rem2px",
+    "rem2rem",
+    "loader"
+  ],
+  "author": "duzhijie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duzhijie317/postcss-rem2px/issues"
+  },
+  "homepage": "https://github.com/duzhijie317/postcss-rem2px#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css": "^3.0.0",
+    "extend": "^3.0.2",
+    "postcss": "^8.4.5"
+  }
+}
