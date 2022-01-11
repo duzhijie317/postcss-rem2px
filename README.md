@@ -14,6 +14,13 @@ postcss rem2px rem2rem
 
 ```
 
+## Computed
+```
+rem2px: regexpRemValue * srfs * (ddw / sdw)
+
+rem2rem: regexpRemValue * srfs * (sdw / ddw) / drfs
+```
+
 ## Usage
 
 ### Node
