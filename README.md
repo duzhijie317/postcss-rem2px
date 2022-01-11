@@ -58,21 +58,17 @@ npm install postcss-loader
 ```
 
 ```
-var rem2px = require('postcss-rem2px');
+postcss.config.js
+```
 
+```
 module.exports = {
-  module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
-      }
-    ]
-  },
-  postcss: function() {
-    return [rem2px({...options})];
-  }
-}
+    plugins: [
+        require('postcss-rem2px')({
+            ...options
+        }),
+    ],
+};
 ```
 
 ### Grunt
